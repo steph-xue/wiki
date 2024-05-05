@@ -19,17 +19,17 @@ The wiki project allows the user to view, search, edit, and create encyclopedia 
 
 # Example Images
 ## Homepage
-![Homepage](/encyclopedia/static/encyclopedia/homepage.png?raw=true "Homepage")
+![Homepage](/encyclopedia/static/encyclopedia/images/homepage.png?raw=true "Homepage")
 The homepage contains links to each of the wiki entries displayed in alphabetical order.
 
 ## Wiki Entry
-![Wiki Entry](/encyclopedia/static/encyclopedia/wiki_entry.png?raw=true "Wiki Entry")
+![Wiki Entry](/encyclopedia/static/encyclopedia/images/wiki_entry.png?raw=true "Wiki Entry")
 Each encyclopedia entry displays a title and the associated written description. Users can make and save edits to any wiki entries.
 
 ## Search Results
-![Search Results](/encyclopedia/static/encyclopedia/search_results.png?raw=true "Search Results")
+![Search Results](/encyclopedia/static/encyclopedia/images/search_results.png?raw=true "Search Results")
 The search bar allows the user to search the full name of the entry (gives the entry page) or sub-string (gives a list of search results containing the substring).
 
 ## Create New Entry
-![Create New Entry](/encyclopedia/static/encyclopedia/create_entry.png?raw=true "Create New Entry")
+![Create New Entry](/encyclopedia/static/encyclopedia/images/create_entry.png?raw=true "Create New Entry")
 Creating a new entry allows the user to create and save a new entry.
