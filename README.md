@@ -14,3 +14,5 @@ The wiki project allows the user to view, search, edit, and create encyclopedia 
 ## Specifications and How to Run
 - The wiki project was created using Django, a Python-based web framework
 - The web application can be run in the terminal using 'python3 manage.py runserver'
+
+![Homepage](/encyclopedia/static/encyclopedia/homepage.png?raw=true "Homepage")
