@@ -14,5 +14,22 @@ The wiki project allows the user to view, search, edit, and create encyclopedia 
 ## Specifications and How to Run
 - The wiki project was created using Django, a Python-based web framework
 - The web application can be run in the terminal using 'python3 manage.py runserver'
+  
+&nbsp;  
 
+# Example Images
+## Homepage
 ![Homepage](/encyclopedia/static/encyclopedia/homepage.png?raw=true "Homepage")
+The homepage contains links to each of the wiki entries displayed in alphabetical order.
+
+## Wiki Entry
+![Wiki Entry](/encyclopedia/static/encyclopedia/wiki_entry.png?raw=true "Wiki Entry")
+Each encyclopedia entry displays a title and the associated written description. Users can make and save edits to any wiki entries.
+
+## Search Results
+![Search Results](/encyclopedia/static/encyclopedia/search_results.png?raw=true "Search Results")
+The search bar allows the user to search the full name of the entry (gives the entry page) or sub-string (gives a list of search results containing the substring).
+
+## Create New Entry
+![Create New Entry](/encyclopedia/static/encyclopedia/create_entry.png?raw=true "Create New Entry")
+Creating a new entry allows the user to create and save a new entry.
