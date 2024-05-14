@@ -14,6 +14,8 @@ The wiki project allows the user to view, search, edit, and create encyclopedia 
 
 ![Homepage](/encyclopedia/static/encyclopedia/images/homepage.png?raw=true "Homepage")
 
+<br></br>
+
 **Navigation Sidebar**
 - The navigation sidebar allows the user to search for encyclopedia entries, go to the homepage, create a new entry, or go to a random entry
     - The search bar allows the user to search the full name of the entry (gives the entry page) or sub-string (gives a list of search results containing the substring)
@@ -21,7 +23,7 @@ The wiki project allows the user to view, search, edit, and create encyclopedia 
     - Creating a new entry allows the user to create and save a new entry (title and description)
     - Random entry brings the user to a random encyclopedia entry page
 
-&nbsp;
+<br></br>
 
 **Wiki Entry**
 - Each encyclopedia entry will allow the user to view details of the entry, make edits (to the title or description) and save the edits
@@ -30,7 +32,7 @@ The wiki project allows the user to view, search, edit, and create encyclopedia 
 
 ![Wiki Entry](/encyclopedia/static/encyclopedia/images/wiki_entry.png?raw=true "Wiki Entry")
 
-&nbsp;
+<br></br>
 
 **Search Results**
 - The search bar allows the user to search the full name of the entry (gives the entry page) or sub-string (gives a list of search results containing the substring)
@@ -39,16 +41,16 @@ The wiki project allows the user to view, search, edit, and create encyclopedia 
 
 ![Search Results](/encyclopedia/static/encyclopedia/images/search_results.png?raw=true "Search Results")
 
-&nbsp;
+<br></br>
 
 **Create New Entry**
-- Creating a new entry allows the user to create and save a new entry
+- Creating a new entry allows the user to create and save a new entry (must provide a title and description)
   
 &nbsp;
 
 ![Create New Entry](/encyclopedia/static/encyclopedia/images/create_entry.png?raw=true "Create New Entry")
 
-&nbsp;
+<br></br>
 
 
 ## Specifications and How to Run
