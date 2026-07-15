@@ -55,7 +55,8 @@ Users can add a new wiki entry from the "Create New Page" link by providing a ti
 | Layer | Technologies |
 |---|---|
 | Frontend | HTML, CSS, Bootstrap |
-| Backend | Django, Python, Markdown |
+| Backend | Django, Python |
+| Libraries | Markdown |
 | Storage | Local file system |
 
 <br>
