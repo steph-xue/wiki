@@ -1,6 +1,6 @@
 # Wiki
 
-A full stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete wiki entries. Each wiki entry is written in Markdown and rendered as a formatted web page, and a persistent sidebar makes it easy to search or move between pages from anywhere in the application.
+A full stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete wiki entries. Each wiki entry is written in Markdown and rendered as formatted content in the browser, and a persistent sidebar makes it easy to search or move between pages from anywhere in the application.
 
 <br>
 
