@@ -16,7 +16,7 @@ A full stack encyclopedia web application, inspired by Wikipedia, where users ca
 
 ## Overview
 
-This project recreates the core experience of an online encyclopedia. The frontend is built with HTML5, CSS3, and Bootstrap, presenting a clean two column layout with a fixed sidebar for navigation and search alongside a main content area. The backend is built with Django and Python, and handles routing, searching, and page creation. Encyclopedia entries are stored as individual Markdown files, and the Markdown library converts them into HTML for display, so content can be written using simple Markdown syntax rather than raw HTML.
+This project recreates the core experience of an online encyclopedia. The frontend is built with HTML, CSS, and Bootstrap, presenting a clean two column layout with a fixed sidebar for navigation and search alongside a main content area. The backend is built with Django and Python, and handles routing, searching, and page creation. Encyclopedia entries are stored as individual Markdown files, and the Markdown library converts them into HTML for display, so content can be written using simple Markdown syntax rather than raw HTML.
 
 <br>
 
@@ -59,7 +59,7 @@ Users can add a new page by providing a title and content written in Markdown. I
 
 | Layer | Technologies |
 |---|---|
-| Frontend | HTML5, CSS3, Bootstrap |
+| Frontend | HTML, CSS, Bootstrap |
 | Backend | Django, Python, Markdown |
 | Storage | Local file system |
 
