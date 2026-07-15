@@ -1,6 +1,6 @@
 # Wiki
 
-A full stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete entries. Each entry is written in Markdown and rendered as a formatted web page, and a persistent sidebar makes it easy to search or move between pages from anywhere on the site.
+A full stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete wiki entries. Each wiki entry is written in Markdown and rendered as a formatted web page, and a persistent sidebar makes it easy to search or move between pages from anywhere on the site.
 
 <br>
 
@@ -16,40 +16,35 @@ A full stack encyclopedia web application, inspired by Wikipedia, where users ca
 
 ## Overview
 
-This project recreates the core experience of an online encyclopedia. The frontend is built with HTML, CSS, and Bootstrap, presenting a clean two column layout with a fixed sidebar for navigation and search alongside a main content area. The backend is built with Django and Python, and handles routing, searching, and page creation. Encyclopedia entries are stored as individual Markdown files, and the Markdown library converts them into HTML for display, so content can be written using simple Markdown syntax rather than raw HTML.
+This project recreates the core experience of an online encyclopedia. The frontend is built with HTML, CSS, and Bootstrap, presenting a clean two column layout with a fixed sidebar for navigation and search alongside a main content area. The backend is built with Django and Python, and handles routing, searching, and page creation. Wiki entries are stored as individual Markdown files, and the Markdown library converts them into HTML for display, so content can be written using simple Markdown syntax rather than raw HTML.
 
 <br>
 
 ## Features
 
-### Homepage
-The homepage lists every encyclopedia entry in alphabetical order, with each title linking directly to its page. This gives users a clear view of everything available and lets them open any entry with a single click.
+### Homepage and Navigation
+The homepage lists every wiki entry in alphabetical order, with each title linking directly to its page. A sidebar stays visible on every page and serves as the main way to move around the application. It includes a search bar labeled "Search Encyclopedia," a "Home" link back to the entry list, a "Create New Page" link for adding a new entry, and a "Random Page" link that takes the user directly to a randomly selected entry.
 
 <p align="center"><img src="/encyclopedia/static/encyclopedia/images/homepage.png?raw=true" alt="Homepage" width="700"></p>
 
 <br>
 
-### Navigation Sidebar
-A sidebar stays visible on every page and serves as the main way to move around the application. It includes a search bar for finding entries, a link to the homepage, a link to create a new page, and a link that takes the user to a random entry.
-
-<br>
-
 ### Wiki Entry
-Each entry page displays the title along with the fully rendered content of the entry. Two actions are available directly on the page. Edit opens the entry in an editable form so the title and content can be updated and saved, while Delete removes the entry entirely and returns the user to the homepage.
+Each wiki entry page displays the title along with the fully rendered content of the entry, converted from Markdown into formatted HTML. Two actions are available directly on the page. Edit opens a form prefilled with the entry's existing title and content so it can be updated and saved, while Delete removes the entry's underlying file entirely and returns the user to the homepage. If a requested entry does not exist, the application displays an error page rather than a broken link.
 
 <p align="center"><img src="/encyclopedia/static/encyclopedia/images/wiki_entry.png?raw=true" alt="Wiki Entry" width="700"></p>
 
 <br>
 
 ### Search
-The search bar supports two behaviors. If the query exactly matches an entry title, the user is taken straight to that entry. If it does not, the application returns a list of every entry whose title contains the query as a substring, making it easy to find related pages even without the exact name.
+The search bar in the sidebar supports two behaviors. If the query exactly matches a wiki entry title, the user is taken straight to that entry's page. If it does not, the application performs a case insensitive substring match and returns a list of every wiki entry whose title contains the query, with each result linking to its own entry, making it easy to find related pages even without knowing the exact name.
 
 <p align="center"><img src="/encyclopedia/static/encyclopedia/images/search_results.png?raw=true" alt="Search Results" width="700"></p>
 
 <br>
 
 ### Create New Entry
-Users can add a new page by providing a title and content written in Markdown. If an entry with the same title already exists, the application displays an error to prevent duplicates. Otherwise the new entry is saved and the user is taken directly to its finished page.
+Users can add a new wiki entry from the "Create New Page" link by providing a title and content written in Markdown. Before saving, the application checks whether an entry with the same title already exists and displays an error message to prevent duplicates if it does. Otherwise the new entry is saved as a Markdown file and the user is taken directly to its finished, rendered page.
 
 <p align="center"><img src="/encyclopedia/static/encyclopedia/images/create_entry.png?raw=true" alt="Create New Entry" width="700"></p>
 
@@ -67,7 +62,7 @@ Users can add a new page by providing a title and content written in Markdown. I
 
 ## How It Works
 
-Every page in the application extends a shared Bootstrap layout, which keeps the sidebar and overall structure consistent while only the main content changes from page to page. On the backend, Django routes each request to the matching view. Depending on the action, that view reads, creates, updates, or deletes the relevant Markdown file, converts its contents from Markdown into HTML using the Python Markdown library, and renders the result with the appropriate template. Storing entries as plain Markdown files keeps the content simple to manage and easy to edit both inside and outside the application.
+Every page in the application extends a shared Bootstrap layout, which keeps the sidebar and overall structure consistent while only the main content changes from page to page. On the backend, Django routes each request to the matching view based on the action being performed. Depending on the action, that view reads, creates, updates, or deletes the relevant Markdown file, converts its contents from Markdown into HTML using the Python Markdown library, and renders the result with the appropriate template. Search queries are matched against entry titles first for an exact match, and if none is found, a case insensitive substring match is used to build a list of related results. Storing wiki entries as plain Markdown files on the local file system keeps the content simple to manage and easy to edit both inside and outside the application.
 
 <br>
 
