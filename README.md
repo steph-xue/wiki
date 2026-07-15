@@ -1,6 +1,6 @@
 # Wiki
 
-A full stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete wiki entries. Each wiki entry is written in Markdown and rendered as a formatted web page, and a persistent sidebar makes it easy to search or move between pages from anywhere on the site.
+A full stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete wiki entries. Each wiki entry is written in Markdown and rendered as a formatted web page, and a persistent sidebar makes it easy to search or move between pages from anywhere in the application.
 
 <br>
 
@@ -62,7 +62,7 @@ Users can add a new wiki entry from the "Create New Page" link by providing a ti
 
 ## How It Works
 
-A shared Bootstrap layout keeps the sidebar and overall structure consistent across every page, with only the main content area changing depending on what is being viewed. On the backend, Django routes each incoming request to the view that matches the action being performed, whether that means reading, creating, updating, or deleting a wiki entry. That view handles the corresponding Markdown file directly, converting its contents into HTML using the Python Markdown library before rendering the result with the appropriate template. Search queries are matched against entry titles first for an exact match, and if none is found, a case insensitive substring match is used to build a list of related results. Storing wiki entries as plain Markdown files on the local file system keeps the content simple to manage and easy to edit both inside and outside the application.
+Each page renders within a two column Bootstrap layout, where the sidebar handles search and navigation while the main panel displays whichever entry, search results, or form is currently active. On the backend, Django routes each incoming request to the view that matches the action being performed, whether that means reading, creating, updating, or deleting a wiki entry. That view handles the corresponding Markdown file directly, converting its contents into HTML using the Python Markdown library before rendering the result with the appropriate template. Search queries are matched against entry titles first for an exact match, and if none is found, a case insensitive substring match is used to build a list of related results. Storing wiki entries as plain Markdown files on the local file system keeps the content simple to manage and easy to edit both inside and outside the application.
 
 <br>
 
