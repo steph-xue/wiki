@@ -23,7 +23,7 @@ This project recreates the core experience of an online encyclopedia. The fronte
 ## Features
 
 ### Homepage and Navigation
-The homepage lists every wiki entry in alphabetical order, with each title linking directly to its page. A sidebar stays visible on every page and serves as the main way to move around the application. It includes a search bar labeled "Search Encyclopedia," a "Home" link back to the entry list, a "Create New Page" link for adding a new entry, and a "Random Page" link that takes the user directly to a randomly selected entry.
+The homepage lists every wiki entry in alphabetical order, with each title linking directly to its own page. A sidebar stays visible on every page and serves as the main way to move around the application. It includes a search bar labeled "Search Encyclopedia," a "Home" link back to the entry list, a "Create New Page" link for adding a new entry, and a "Random Page" link that takes the user directly to a randomly selected entry, offering a quick way to explore the encyclopedia.
 
 <p align="center"><img src="/encyclopedia/static/encyclopedia/images/homepage.png?raw=true" alt="Homepage" width="700"></p>
 
@@ -62,7 +62,7 @@ Users can add a new wiki entry from the "Create New Page" link by providing a ti
 
 ## How It Works
 
-Every page in the application extends a shared Bootstrap layout, which keeps the sidebar and overall structure consistent while only the main content changes from page to page. On the backend, Django routes each request to the matching view based on the action being performed. Depending on the action, that view reads, creates, updates, or deletes the relevant Markdown file, converts its contents from Markdown into HTML using the Python Markdown library, and renders the result with the appropriate template. Search queries are matched against entry titles first for an exact match, and if none is found, a case insensitive substring match is used to build a list of related results. Storing wiki entries as plain Markdown files on the local file system keeps the content simple to manage and easy to edit both inside and outside the application.
+Django routes each incoming request to the view that matches the action being performed, whether that means reading, creating, updating, or deleting a wiki entry. That view handles the corresponding Markdown file directly, converting its contents into HTML using the Python Markdown library before rendering the result with the appropriate template. A shared Bootstrap layout keeps the sidebar and overall structure consistent across every page, with only the main content area changing depending on what is being viewed. Search queries are matched against entry titles first for an exact match, and if none is found, a case insensitive substring match is used to build a list of related results. Storing wiki entries as plain Markdown files on the local file system keeps the content simple to manage and easy to edit both inside and outside the application.
 
 <br>
 
