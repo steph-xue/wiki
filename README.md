@@ -56,9 +56,9 @@ Users can add a new wiki entry from the "Create New Page" link by providing a ti
 |---|---|
 | Frontend | HTML, CSS, Bootstrap |
 | Backend | Django, Python |
-| Libraries | Markdown |
+| Libraries | Markdown (converts the Markdown content of each wiki entry into HTML for display) |
 | Storage | Local file system |
-
+  
 <br>
 
 ## How It Works
