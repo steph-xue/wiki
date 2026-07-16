@@ -9,8 +9,8 @@ A full stack encyclopedia web application, inspired by Wikipedia, where users ca
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [How It Works](#how-it-works)
-- [Getting Started](#getting-started)
 - [Future Improvements](#future-improvements)
+- [Getting Started](#getting-started)
 
 <br>
 
@@ -67,6 +67,15 @@ Each page renders within a two column Bootstrap layout, where the sidebar handle
 
 <br>
 
+## Future Improvements
+Several enhancements are planned to extend the functionality of the application:
+- User accounts so new pages and edits can be attributed to contributors
+- Page history so changes to an entry can be tracked and reverted
+- A live preview of Markdown while creating or editing an entry
+- A live hosted demo to allow users to try the application without a local setup
+
+<br>
+
 ## Getting Started
 
 Follow the steps below to set up and run the application on your own machine.
@@ -117,12 +126,3 @@ python3 manage.py runserver
 ```
 
 Once the server is running, open `http://127.0.0.1:8000/` in your browser to start using the application.
-
-<br>
-
-## Future Improvements
-Several enhancements are planned to extend the functionality of the application:
-- User accounts so new pages and edits can be attributed to contributors
-- Page history so changes to an entry can be tracked and reverted
-- A live preview of Markdown while creating or editing an entry
-- A live hosted demo to allow users to try the application without a local setup
