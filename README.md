@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center">
-  A full-stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete wiki entries.
+  A full-stack encyclopedia web application for browsing, searching, creating, and editing wiki entries.
 </h4>
 
 <p align="center">
