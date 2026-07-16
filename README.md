@@ -1,6 +1,15 @@
-# Wiki
 
-A full stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete wiki entries. Each wiki entry is written in Markdown and rendered as formatted content in the browser, and a persistent sidebar makes it easy to search or move between pages from anywhere in the application.
+<h1 align="center">
+  Wiki
+</h1>
+
+<h4 align="center">
+  A full-stack encyclopedia web application, inspired by Wikipedia, where users can browse, search, create, edit, and delete wiki entries.
+</h4>
+
+<p align="center">
+  <img src="/encyclopedia/static/encyclopedia/images/homepage.png?raw=true" alt="Homepage" width="500">
+</p>
 
 <br>
 
@@ -16,7 +25,7 @@ A full stack encyclopedia web application, inspired by Wikipedia, where users ca
 
 ## Overview
 
-This project recreates the core experience of an online encyclopedia. The frontend is built with HTML, CSS, and Bootstrap, presenting a clean two column layout with a fixed sidebar for navigation and search alongside a main content area. The backend is built with Django and Python, and handles routing, searching, and page creation. Wiki entries are stored as individual Markdown files, and the Markdown library converts them into HTML for display, so content can be written using simple Markdown syntax rather than raw HTML.
+This project is a full-stack encyclopedia web application that allows users to browse, search, create, edit, and delete wiki entries. The frontend is built with HTML, CSS, and Bootstrap and uses a clean two-column layout with a persistent sidebar for navigation and search alongside the main content area. The backend is built with Python and Django and handles routing, searching, and page management. Each wiki entry is stored as an individual Markdown file, and the Markdown library converts the content into formatted HTML for display in the browser, allowing entries to be written using simple Markdown syntax rather than raw HTML.
 
 <br>
 
