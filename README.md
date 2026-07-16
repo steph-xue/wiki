@@ -25,7 +25,7 @@
 
 ## Overview
 
-This project is a full-stack encyclopedia web application that allows users to browse, search, create, edit, and delete wiki entries. The frontend is built with HTML, CSS, and Bootstrap and uses a clean two-column layout with a persistent sidebar for navigation and search alongside the main content area. The backend is built with Python and Django and handles routing, searching, and page management. Each wiki entry is stored as an individual Markdown file, and the Markdown library converts the content into formatted HTML for display in the browser, allowing entries to be written using simple Markdown syntax rather than raw HTML.
+This project implements the core experience of an online encyclopedia, allowing users to browse, search, create, edit, and delete wiki entries. The frontend is built with HTML, CSS, and Bootstrap and uses a clean two-column layout with a persistent sidebar for navigation and search alongside the main content area. The backend is built with Python and Django and handles routing, searching, and page management. Each wiki entry is stored as an individual Markdown file, and the Markdown library converts the content into formatted HTML for display in the browser, allowing entries to be written using simple Markdown syntax rather than raw HTML.
 
 <br>
 
