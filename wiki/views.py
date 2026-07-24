@@ -14,7 +14,7 @@ def md_to_html(md_content):
 
 # Displays the homepage with list of encyclopedia entries (in alphabetical order)
 def index(request):
-    return render(request, "encyclopedia/index.html", {
+    return render(request, "wiki/index.html", {
         "entries": util.list_entries()
     })
 
@@ -25,13 +25,13 @@ def entry(request, title):
 
     # If entry page does not exist, displays an error message
     if md_content == None:
-        return render(request, "encyclopedia/error.html", {
+        return render(request, "wiki/error.html", {
             "message": "Requested page not found"
         })
     # If entry page exists, displays the entry's page
     else:
         html_content = md_to_html(md_content)
-        return render(request, "encyclopedia/entry.html", {
+        return render(request, "wiki/entry.html", {
             "title": title, 
             "content": html_content
         })
@@ -48,7 +48,7 @@ def search(request):
     if util.get_entry(search) is not None:
         md_content = util.get_entry(search)
         html_content = md_to_html(md_content)
-        return render(request, "encyclopedia/entry.html", {
+        return render(request, "wiki/entry.html", {
             "title": search,
             "content": html_content
         })
@@ -58,7 +58,7 @@ def search(request):
         for entry in entrylist:
             if search.lower() in entry.lower():
                 validentries.append(entry)
-        return render(request, "encyclopedia/search.html", {
+        return render(request, "wiki/search.html", {
                 "entries": validentries
             })
     
@@ -76,21 +76,21 @@ def create(request):
 
         # If entry already exists, displays an error message
         if title in entrylist:
-            return render(request, "encyclopedia/error.html", {
+            return render(request, "wiki/error.html", {
             "message": "Entry already exists"
         })
         # If entry does not exist, saves the entry and redirects user to the new entry's page
         else:
             util.save_entry(title, md_content)
             html_content = md_to_html(md_content)
-            return render(request, "encyclopedia/entry.html", {
+            return render(request, "wiki/entry.html", {
                 "title": title,
                 "content": html_content
             })
 
     # GET - User reaches the create a new entry page
     else:
-        return render(request, "encyclopedia/create.html")
+        return render(request, "wiki/create.html")
     
 
 # Allows the user start edits for an entry page 
@@ -100,7 +100,7 @@ def edit(request):
     if request.method == "POST":
         title = request.POST["title"]
         md_content = util.get_entry(title)
-        return render(request, "encyclopedia/edit.html", {
+        return render(request, "wiki/edit.html", {
             "title": title,
             "content": md_content
         })
@@ -115,7 +115,7 @@ def save_edit(request):
         md_content = request.POST["content"]
         util.save_entry(title, md_content)
         html_content = md_to_html(md_content)
-        return render(request, "encyclopedia/entry.html", {
+        return render(request, "wiki/entry.html", {
             "title": title,
             "content": html_content
         })
@@ -134,7 +134,7 @@ def delete(request):
         os.remove(f"entries/{title}.md")
         
         # Returns the user to the homepage
-        return render(request, "encyclopedia/index.html", {
+        return render(request, "wiki/index.html", {
         "entries": util.list_entries()
         })
     
@@ -149,7 +149,7 @@ def randomchoice(request):
     # Displays the title and contents of the random entry to the user
     md_content = util.get_entry(entry)
     html_content = md_to_html(md_content)
-    return render(request, "encyclopedia/entry.html", {
+    return render(request, "wiki/entry.html", {
         "title": entry,
         "content": html_content
     })
