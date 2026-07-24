@@ -7,7 +7,7 @@
 </h4>
 
 <p align="center">
-  <img src="assets/screenshots/homepage.png" alt="Homepage" width="500">
+  <img src="docs/screenshots/homepage.png" alt="Homepage" width="500">
 </p>
 
 <br>
@@ -33,28 +33,28 @@ This project implements the core experience of an online encyclopedia, allowing 
 ### Homepage and Navigation
 The homepage lists every wiki entry in alphabetical order, with each title linking directly to its own page. A sidebar stays visible on every page and serves as the main way to move around the application. It includes a search bar labeled "Search Encyclopedia," a "Home" link back to the entry list, a "Create New Page" link for adding a new entry, and a "Random Page" link that takes the user directly to a randomly selected entry, offering a quick way to explore the encyclopedia.
 
-<p align="center"><img src="assets/screenshots/homepage.png" alt="Homepage" width="700"></p>
+<p align="center"><img src="docs/screenshots/homepage.png" alt="Homepage" width="700"></p>
 
 <br>
 
 ### Wiki Entry
 Each wiki entry page displays the title along with the fully rendered content of the entry, converted from Markdown into formatted HTML. Two actions are available directly on the page. Edit opens a form prefilled with the entry's existing title and content so it can be updated and saved, while Delete removes the entry's underlying file entirely and returns the user to the homepage. If a requested entry does not exist, the application displays an error page rather than a broken link.
 
-<p align="center"><img src="assets/screenshots/wiki_entry.png" alt="Wiki Entry" width="700"></p>
+<p align="center"><img src="docs/screenshots/wiki_entry.png" alt="Wiki Entry" width="700"></p>
 
 <br>
 
 ### Search
 The search bar in the sidebar supports two behaviors. If the query exactly matches a wiki entry title, the user is taken straight to that entry's page. If it does not, the application performs a case insensitive substring match and returns a list of every wiki entry whose title contains the query, with each result linking to its own entry, making it easy to find related pages even without knowing the exact name.
 
-<p align="center"><img src="assets/screenshots/search_results.png" alt="Search Results" width="700"></p>
+<p align="center"><img src="docs/screenshots/search_results.png" alt="Search Results" width="700"></p>
 
 <br>
 
 ### Create New Entry
 Users can add a new wiki entry from the "Create New Page" link by providing a title and content written in Markdown. Before saving, the application checks whether an entry with the same title already exists and displays an error message to prevent duplicates if it does. Otherwise the new entry is saved as a Markdown file and the user is taken directly to its finished, rendered page.
 
-<p align="center"><img src="assets/screenshots/create_entry.png" alt="Create New Entry" width="700"></p>
+<p align="center"><img src="docs/screenshots/create_entry.png" alt="Create New Entry" width="700"></p>
 
 <br>
 
