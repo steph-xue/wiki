@@ -88,8 +88,6 @@ Several enhancements are planned to extend the functionality of the application:
 
 Follow the steps below to set up and run the application on your own machine.
 
-<br>
-
 > **Note:** This project requires Python 3.6-3.12. Django 3.2.25 is not currently compatible with Python 3.13 or later, since it relies on the `cgi` module, which was removed in Python 3.13.
 
 <br>
@@ -98,8 +96,10 @@ Follow the steps below to set up and run the application on your own machine.
 
 Make sure Python 3 is installed before you begin. You can check by running the command below, which should print a version number.
 ```bash
-python3 --version
+python3 --version   # Windows: use `python --version`
 ```
+
+<br>
 
 **1. Clone the repository**
 
