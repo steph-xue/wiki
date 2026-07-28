@@ -1,12 +1,12 @@
-# Python virtual environment
-venv/
+# macOS
+.DS_Store
 
 # Python bytecode
 __pycache__/
 *.pyc
 
-# macOS
-.DS_Store
+# Python virtual environment
+venv/
 
-# Django database 
+# Django database
 db.sqlite3
