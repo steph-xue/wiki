@@ -113,7 +113,7 @@ cd wiki
 This keeps the project's dependencies separate from other Python projects on your machine.
 ```bash
 python3 -m venv .venv      # On Windows use: python -m venv .venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 ```
 
 **3. Install the Dependencies**
