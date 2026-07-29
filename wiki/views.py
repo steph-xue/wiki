@@ -66,7 +66,7 @@ def search(request):
 # Allows the user to create a new entry page
 def create(request):
 
-    # POST -  User submits the form (title and content) to create a new entry page
+    # POST - User submits the form (title and content) to create a new entry page
     if request.method == "POST":
 
         # Gets list of all current entries & the user's title and content for the new entry page
