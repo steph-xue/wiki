@@ -127,7 +127,7 @@ pip install -r requirements.txt
 
 This runs the application locally.
 ```bash
-python3 manage.py runserver  # On Windows use: python manage.py runserver
+python manage.py runserver  
 ```
 
 Once the server is running, open the local URL shown in the terminal to start using the application.
