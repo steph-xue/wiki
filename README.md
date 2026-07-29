@@ -93,14 +93,14 @@ Follow the steps below to set up and run the application on your own machine.
 **Prerequisites**
 
 Make sure Python 3 is installed before you begin. You can check by running the command below, which should print a version number. 
-> **Note:** This project requires Python 3.10-3.14, per Django 5.2's supported versions.
+> **Note:** This project requires Python 3.10+, per Django 5.2's supported versions.
 ```bash
 python3 --version  # On Windows use: python --version
 ```
 
 <br>
 
-**1. Clone the repository**
+**1. Clone the Repository**
 
 This downloads a copy of the project to your computer and moves you into the project folder.
 ```bash
@@ -108,7 +108,7 @@ git clone https://github.com/steph-xue/wiki.git
 cd wiki
 ```
 
-**2. Create and activate a virtual environment (recommended)**
+**2. Create and Activate a Python Virtual Environment**
 
 This keeps the project's dependencies separate from other Python projects on your machine.
 ```bash
@@ -116,22 +116,14 @@ python3 -m venv venv      # On Windows use: python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
-**3. Install the dependencies**
+**3. Install the Dependencies**
 
-This installs Django and the Markdown library the project needs to run.
+This installs all dependencies the project needs to run.
 ```bash
 pip install -r requirements.txt
 ```
 
-**4. Set up the database**
-
-This prepares the local database Django uses for sessions and administration.
-```bash
-python3 manage.py makemigrations  # On Windows use: python manage.py makemigrations
-python3 manage.py migrate         # On Windows use: python manage.py migrate
-```
-
-**5. Start the development server**
+**4. Start the Development Server**
 
 This runs the application locally.
 ```bash

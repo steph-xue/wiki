@@ -7,6 +7,4 @@ __pycache__/
 
 # Python virtual environment
 venv/
-
-# Django database
-db.sqlite3
+.venv/
