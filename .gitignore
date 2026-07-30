@@ -1,9 +1,9 @@
-# Editor/OS files
-.DS_Store
+# Virtual environments
+.venv/
 
-# Python bytecode
+# Python cache files
 __pycache__/
 *.pyc
 
-# Python virtual environment
-.venv/
+# Operating system files
+.DS_Store
