@@ -125,7 +125,7 @@ pip install -r requirements.txt
 
 **4. Start the Development Server**
 
-This runs the application locally.
+This runs both the frontend and backend together on a single local server.
 ```bash
 python manage.py runserver  
 ```
